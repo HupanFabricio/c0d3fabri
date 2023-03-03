@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rubik:wght@400;500;600&display=swap');
+
+:root {
+    --ff-title: 'Dela Gothic One', sans-serif;
+    --ff-text: 'Rubik', sans-serif;  
+    --clr-black:#1c1c1c;
+    --clr-white:#ececec;
+    --clr-discord: #5865F2;
+    --bg-white:url("../img/bg_white.png");
+    --bg-black:url("../img/bg_black.png");
+    --bg-grey:url("../img/bg_grey.png");
+
+}
