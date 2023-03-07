@@ -61,6 +61,27 @@ h1, h2, h3 {
     gap: 1rem;
 }
 
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 2px;
+    background-color: #1c1c1c;
+    transition: 0.2s;
+    transform: scale(0);
+    transform-origin: center;       /* INFLUCHE SOLAMENTE AL TRANSFORM x defecto es center pero lo dejo igualmente */
+}
+
+.nav-link:hover::after {
+    transform: scale(1);
+}
+
 .sobre-mi-inner {
     display: grid;
     grid-template-columns: .35fr 1fr;
@@ -130,24 +151,87 @@ h1, h2, h3 {
     color:var(--clr-white);
 }
 /* SECTION PORTAFOLIO */
+#proyectos {
+    margin: auto;
+}
+
 .fila {
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
 }
 
-.fila .proyecto {
+.proyecto {
     border-radius: 0.5rem;
-    max-width: 450px;
-    border: 1px solid #000;
+    max-width: 400px;
+    max-height: 183px;
+    border: 1.5px solid #000;
     margin: 0 10px;
     position: relative;
     overflow: hidden;
     background-color: #1c1c1c;
 }
 
-.fila .proyecto img {
-    max-width: 450px;
-    max-height: 180px;
+.proyecto img {
+    max-width: 400px;
+    max-height: 183px;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
 }
 
+.proyecto:hover img {
+    filter: grayscale(0);
+} 
+
+.info {
+    position: absolute;
+    left: 0;
+    background-color: rgba(0,0,0, .8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+.proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+.btns {
+    display: flex;
+    align-items: start;
+}
+
+.btn {
+    display: flex;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    gap: .5rem;  
+    position: relative;     
+    transition: .2s;
+    isolation: isolate;
+}
+
+.btn:hover {
+    color: #1c1c1c;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ececec;
+    transition: .2s;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    height: 100%;
+}
