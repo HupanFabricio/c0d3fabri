@@ -167,7 +167,6 @@ h1, h2, h3 {
     max-width: 400px;
     max-height: 183px;
     border: 1.5px solid #000;
-    margin: 0 10px;
     position: relative;
     overflow: hidden;
     background-color: #1c1c1c;
@@ -236,4 +235,57 @@ h1, h2, h3 {
 
 .btn:hover::after {
     height: 100%;
+}
+
+/* Estilo contacto */
+
+#contacto {
+    padding: 10px 5px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 48%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    border: none;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #ff5080; 
+    color: #fff;
 }
