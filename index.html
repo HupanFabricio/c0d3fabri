@@ -63,7 +63,7 @@
                         </a>
                         <div class="info">
                             <h4>Rick and Morty</h4>
-                            <p>Informacion de personajes.</p>
+                            <p>Personajes de serie.</p>
                         </div>
                     </div>
     
@@ -87,18 +87,29 @@
         </section>
 
 
-        <section id="contactar" class="section section-contact">
+        <section id="contacto" class="section section-contact">
             <div class="container">
-                <div class="section-inner">
+                <h2 class="section-title">Contactame</h2>
+                <div class="contenedor-form">
 
-                    <h2 class="section-title">Contactar</h2>
-                    <p class="section-text">...</p>
-                    <p class="section-text">...</p>
 
-                    <div class="btns">
-                        <a target="_blank" href="mailto:fabrihupan@gmail.com">enviar<i
-                                class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
+                    <form action="https://formsubmit.co/c0d3fabri@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="c0d3fabri gmail desde tu pagina!">
+                        <div class="fila mitad">
+                            <input type="text" name="name" placeholder="Nombre Completo" class="input-mitad" required >
+                            <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required>
+                        </div>
+                        <div class="fila">
+                            <input type="text" placeholder="Tema..." class="input-full">
+                        </div>
+                        <div class="fila">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                        </div>
+
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    </form>
+
+
                 </div>
             </div>
         </section>

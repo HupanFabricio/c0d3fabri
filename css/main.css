@@ -109,6 +109,7 @@ h1, h2, h3 {
     grid-area: titulo;
     font-size: 3rem;
     line-height: 1.1;
+    align-self: end;
 }
 
 .sobre-mi-text {
@@ -228,6 +229,7 @@ h1, h2, h3 {
     right: 0;
     height: 3px;
     background-color: #ececec;
+    border-radius: .2rem;
     transition: .2s;
     z-index: -1;
 }
