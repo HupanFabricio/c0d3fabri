@@ -155,9 +155,8 @@ h1, h2, h3 {
     font-size: 1.2rem;
 }
 
-
-
 /* ESTILOS - PORTAFOLIO */
+
 #proyectos {
     margin: auto;
 }
@@ -245,13 +244,8 @@ h1, h2, h3 {
 
 /* ESTILOS - CONTACTO */
 
-#contacto {
-    padding: 2rem;
-}
-
-#contacto .contenedor-form {
-    max-width: 1000px;
-    margin: auto;
+#contacto h2 {
+    padding-bottom: 2rem;
 }
 
 #contacto .contenedor-form .fila {
