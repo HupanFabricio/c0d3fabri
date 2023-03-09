@@ -276,6 +276,7 @@ h1, h2, h3 {
 #contacto .btn-enviar {
     display: block;
     margin: auto;
+    margin-top: 2rem;
     cursor: pointer;
     transition: .5s;
     padding: 10px 15px;
