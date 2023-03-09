@@ -44,6 +44,10 @@ h1, h2, h3 {
     padding-inline: 2rem;
 }
 
+.container .section-title {
+    line-height: 3rem;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -80,6 +84,12 @@ h1, h2, h3 {
 
 .nav-link:hover::after {
     transform: scale(1);
+}
+
+/* SOBRE MI */
+
+#sobre-mi {
+    padding-bottom: 5rem;
 }
 
 .sobre-mi-inner {
@@ -122,8 +132,7 @@ h1, h2, h3 {
 }
 
 .section {
-    padding-block: 2rem;
-    padding-bottom: 5rem;
+    padding: 2rem 0;
 }
 
 .section-proyectos {
@@ -146,12 +155,9 @@ h1, h2, h3 {
     font-size: 1.2rem;
 }
 
-.section-publi {
-    background-image: var(--bg-black);
-    background-size: 100%;
-    color:var(--clr-white);
-}
-/* SECTION PORTAFOLIO */
+
+
+/* ESTILOS - PORTAFOLIO */
 #proyectos {
     margin: auto;
 }
@@ -237,10 +243,10 @@ h1, h2, h3 {
     height: 100%;
 }
 
-/* Estilo contacto */
+/* ESTILOS - CONTACTO */
 
 #contacto {
-    padding: 10px 5px;
+    padding: 2rem;
 }
 
 #contacto .contenedor-form {
@@ -288,4 +294,21 @@ h1, h2, h3 {
 #contacto .btn-enviar:hover {
     background-color: #ff5080; 
     color: #fff;
+}
+
+/* ESTILOS - PUBLI */
+
+.section-publi {
+    background-image: var(--bg-black);
+    background-size: 100%;
+    color:var(--clr-white);
+    padding-bottom: 2rem;
+}
+
+/* .section-publi .container .section-inner .section-title {
+    line-height: 3rem;
+} */
+
+.section-publi .container .section-inner {
+    gap: 2rem;
 }
