@@ -107,6 +107,7 @@ h1, h2, h3 {
     background-image: var(--bg-black);
     border-radius: 1rem;
     transform: scale(0.9);
+    align-self: start;
 }
 
 .sobre-mi-foto img {
@@ -256,7 +257,6 @@ h1, h2, h3 {
 }
 
 #contacto .contenedor-form .mitad {
-    display: flex;
     justify-content: space-between;
 }
 
@@ -309,4 +309,58 @@ h1, h2, h3 {
 
 .section-publi .container .section-inner {
     gap: 2rem;
+}
+
+@media screen and (max-width:800px) {
+
+    /* RESET */
+
+    .btns{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .container {
+        padding-inline: 1rem;
+        width: 85%;
+    }
+
+    /* SOBRE MI */
+
+    .sobre-mi-foto {
+        display: block;
+        height: 400px;
+        margin: auto;
+    }
+
+    .sobre-mi-foto img {
+        height: 100%;
+    }
+
+    .sobre-mi-inner {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    .sobre-mi-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    /* CONTACTO */
+
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+    }
+
+    /* PUBLI */
+
+    .section-publi {
+        text-align: center;
+    }
 }
