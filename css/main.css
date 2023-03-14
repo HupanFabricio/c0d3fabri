@@ -7,6 +7,7 @@
 }
 
 :root {
+    scroll-behavior: smooth;
     --ff-title: 'Dela Gothic One', sans-serif;
     --ff-text: 'Rubik', sans-serif;  
     --clr-black:#1c1c1c;
