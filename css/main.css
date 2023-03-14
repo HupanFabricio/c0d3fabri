@@ -303,17 +303,64 @@ h1, h2, h3 {
     padding-bottom: 2rem;
 }
 
-/* .section-publi .container .section-inner .section-title {
-    line-height: 3rem;
-} */
-
 .section-publi .container .section-inner {
     gap: 2rem;
+}
+
+/* MENU */
+
+button {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.closed-menu, .open-menu {
+    display: none;
 }
 
 @media screen and (max-width:800px) {
 
     /* RESET */
+
+    .nav-list {
+        position: fixed;
+        background-image: var(--bg-white);
+        flex-direction: column;
+        inset: 0;
+        text-align: right;
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        gap: 2rem;
+        transform: translateX(100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: .2s;
+    }
+    .nav-list.active {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .closed-menu {
+        display: block;
+        position: absolute;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .open-menu {
+        display: block;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        font-size: 1.7rem;
+    }
 
     .btns{
         justify-content: center;
