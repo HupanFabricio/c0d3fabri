@@ -137,12 +137,6 @@ h1, h2, h3 {
     padding: 2rem 0;
 }
 
-.section-proyectos {
-    background-image: var(--bg-black);
-    background-size: 100%;
-    color:var(--clr-white);
-}
-
 .section-inner {
     display: flex;
     flex-direction: column;
@@ -159,6 +153,18 @@ h1, h2, h3 {
 
 /* ESTILOS - PORTAFOLIO */
 
+.section-proyectos {
+    background-image: var(--bg-black);
+    background-size: 100%;
+    color:var(--clr-white);
+}
+
+#proyectos .proyecto a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 #proyectos {
     margin: auto;
 }
@@ -172,19 +178,18 @@ h1, h2, h3 {
 }
 
 .proyecto {
-    border-radius: 0.5rem;
-    max-width: 400px;
-    max-height: 183px;
-    border: 1.5px solid #000;
+    max-width: max-content;
+    border: none;
     position: relative;
     overflow: hidden;
-    background-color: #1c1c1c;
+    background-color: transparent;
 }
 
 .proyecto img {
+    border-radius: 0.5rem;
     position: relative;
-    width: max-content;
-    height: max-content;
+    width: 100%;
+    height: 100%;
     filter: grayscale(1);
     object-fit: cover;
     transition: .5s;
@@ -412,3 +417,6 @@ button {
         text-align: center;
     }
 }
+
+/* PRUEBA */
+
