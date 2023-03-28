@@ -253,6 +253,30 @@ h1, h2, h3 {
 }
 
 /* ESTILOS - CONTACTO */
+.contenedor-titulo-cv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv {
+    margin-top: 0.5rem;
+}
+
+.cv-a{
+    display: block;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    border: none;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cv-a:hover {
+    background-color: #ff5080; 
+    color: #fff;
+}
 
 #contacto h2 {
     padding-bottom: 2rem;
