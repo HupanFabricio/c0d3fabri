@@ -337,6 +337,10 @@ h1, h2, h3 {
     gap: 2rem;
 }
 
+.section-publi i:hover{
+    color: #ff5080;
+}
+
 /* MENU */
 
 button {
@@ -434,8 +438,6 @@ button {
     #contacto .contenedor-form .mitad input {
         width: 100%;
     }
-
-    /* PUBLI */
 
     .section-publi {
         text-align: center;
