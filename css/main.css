@@ -16,6 +16,7 @@
     --bg-white:url("../img/bg_white.png");
     --bg-black:url("../img/bg_black2.png");
     --bg-grey:url("../img/bg_grey.png");
+    --bg-neon:url("../img/bg-neon.png")
 }
 
 body {
@@ -105,7 +106,7 @@ h1, h2, h3 {
 
 .sobre-mi-foto {
     grid-area: foto;
-    background-image: var(--bg-black);
+    background-image: var(--bg-neon);
     border-radius: 1rem;
     transform: scale(0.9);
     align-self: start;
